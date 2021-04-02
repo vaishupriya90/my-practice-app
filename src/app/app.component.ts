@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-recipe-app';
+  condition = false;
+  buttonLog = [];
+
+  ngOnInit(): void {
+  }
+
+  onClick(){
+    this.condition = !this.condition;
+    this.buttonLog.push(new Date());
+  }
 }
+
+
+
